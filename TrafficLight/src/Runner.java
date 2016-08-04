@@ -1,5 +1,6 @@
 import java.awt.Color;
 
+import javax.swing.*;
 
 public class Runner {
 
@@ -10,7 +11,8 @@ public class Runner {
 		bulb1.turnOn();
 		System.out.println(bulb1);*/
 		
-		TrafficLight light = new TrafficLight();
+		//NON GRAPHICAL INSTANCES //
+		/*TrafficLight light = new TrafficLight();
 		System.out.println(light.getLights()[0]);
 		System.out.println(light.getLights()[1]);
 		System.out.println(light.getLights()[2]);
@@ -19,8 +21,17 @@ public class Runner {
 		light.changeState();
 		System.out.println(light.getLights()[0]);
 		System.out.println(light.getLights()[1]);
-		System.out.println(light.getLights()[2]);
+		System.out.println(light.getLights()[2]);*/
 		
+		//GUI USING JFRAME
+		
+		JFrame frame = new JFrame("Traffic Light");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		//frame.getContentPane().add(new TrafficLightPanel());
+		frame.pack();
+		frame.setVisible(true);
+	
+	
 	}
 
 }
