@@ -46,6 +46,14 @@ public class TrafficLight {
 		
 	}// end of changeState
 	
+	public int indexOfLitBulb(){
+		int i = 0;
+		while(i<lights.length && lights[i].isOff()){
+			i++;
+		}//end while
+		return i;
+	}//end method
+	
 	public String toString(){
 		String result = "";
 		
